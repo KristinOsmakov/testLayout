@@ -1,0 +1,48 @@
+.button {
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  
+  @mixin button-base($max-width, $height, $font-size, $font-weight) {
+    max-width: $max-width;
+    width: 100%;
+    height: $height;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    padding: 0 15px;
+  }
+  
+  .order {
+    @include button-base(183px, 43px, 13px, 400);
+    background-color: var(--color-light-blue);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+  }
+  
+  .info {
+    @include button-base(183px, 43px, 13px, 400);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-grey);
+    color: var(--color-light-grey);
+  }
+  
+  .attach {
+    @include button-base(370px, 48px, 15px, 600);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-blue);
+    color: var(--color-dark-blue);
+  }
+  
+  .send {
+    @include button-base(370px, 48px, 15px, 600);
+    background-color: var(--color-light-blue);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }

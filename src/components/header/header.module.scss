@@ -1,0 +1,36 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    max-width: 1920px;
+    height: 100px;
+    background: var(--color-grey-dark);
+    opacity: 0.9;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link{
+    //font-family: Raleway;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        color: var(--color-white);
+    }
+}
+
+.span {
+    color: var(--color-light-blue);
+}

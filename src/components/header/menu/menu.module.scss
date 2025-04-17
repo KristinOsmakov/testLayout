@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    gap: 60px;
+}
+
+.link {
+    //font-family: Lato;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-white);
+    text-transform: uppercase;
+
+    &:first-child {
+        color: var(--color-light-blue);
+      }
+      
+      &:hover {
+        color: var(--color-light-blue);
+      }
+      
+      .menu:hover &:first-child {
+        color: var(--color-white);
+      }
+      
+      &:first-child:hover {
+        color: var(--color-light-blue) !important;
+      }
+}
+

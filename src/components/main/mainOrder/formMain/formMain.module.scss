@@ -1,0 +1,56 @@
+.form {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+    
+
+    .select, .email, .name {
+        width: 100%;
+    }
+    
+    .rangeWrapper {
+        grid-column: 1 / span 2;
+        width: 100%;
+    }
+    
+    .attachButton {
+        grid-column: 3;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        
+        .rangeWrapper {
+            grid-column: 1;
+            max-width: 100%;
+        }
+        
+        .attachButton {
+            grid-column: 1;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        
+    }
+}
+
+@media (max-width: 777px) {
+    .rangeWrapper {
+        max-width: 100% !important;
+    }
+}
+
+
